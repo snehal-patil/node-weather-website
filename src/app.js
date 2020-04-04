@@ -7,6 +7,7 @@ const forecast = require('./utils/forecast')
 // console.log(path.join(__dirname, '../public'))
 
 const app = express()
+const port = process.env.PORT || 3000
 
 //Define paths for express config
 const publicDirPath = path.join(__dirname, '../public')
@@ -19,8 +20,8 @@ app.set('views', viewsPath)
 //Setup for static directory to use
 app.use(express.static(publicDirPath))
 
-app.listen(3000, () => {
-    console.log('server is up and running on port 3000')
+app.listen(port, () => {
+    console.log('server is up and running on port '+ port)
 }) //one time you have to mention
 
 app.get('', (req, res) => {
