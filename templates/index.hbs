@@ -1,0 +1,29 @@
+{{!-- Dyanamic Page - to seperate view and code --}}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather</title>
+        <link rel="icon" href="/img/weather.png">
+        <link rel="stylesheet" href="/css/style.css"/>
+       
+    </head>
+
+    <body>
+        
+        <h1>{{title}}</h1>
+
+        <h2>Use this site for weather information for below location</h2>
+
+        <form>
+            <input placeholder="Location">
+            <button>Search</button>
+        </form>
+
+        <p id="msg-1"></p>
+        <p id="msg-2"></p>
+
+        <h3>Created by {{name}}</h3>
+         <script src="/js/app.js"></script>
+    </body>
+</html>
