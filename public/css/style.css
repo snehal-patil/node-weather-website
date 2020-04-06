@@ -1,11 +1,19 @@
-h2 {
+h4 {
     color: grey;
 }
 
 h1 {
-    color: grey;
+    color: rgb(95, 168, 228);
 }
 
 img {
     width: 200px;
 }
+
+div {
+    background-color: white;
+    width: 300px;
+    border: 1px solid rgb(108, 149, 161);
+    padding: 50px;
+    margin: 20px;
+  }
